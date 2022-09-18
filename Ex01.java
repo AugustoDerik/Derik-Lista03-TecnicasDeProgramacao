@@ -15,22 +15,22 @@ public class Ex01 {
 	}
 
 	public static void main(String[] args) {
-		Scanner atividade = new Scanner(System.in);
-		// int tam = atividade.nextInt();
+		
+		Scanner ler = new Scanner(System.in);
 		int vetor[] = new int[10];
-		int i = 0;
 
 		System.out.println("Informe o vetor:");
 
-		for (i = 0; i < 10; i++) {
-			vetor[i] = atividade.nextInt();
+		for (int i = 0; i < 10; i++) {
+			vetor[i] = ler.nextInt();
 		}
 
 		System.out.println("Diga o numero que quer procurar:");
-		int numero = atividade.nextInt();
+		int numero = ler.nextInt();
 
 		System.out.println("encontrou na posição " + pesquisar(numero, vetor));
-		atividade.close();
+		
+		ler.close();
 	}
 
 }
